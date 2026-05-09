@@ -156,7 +156,7 @@ const Index = () => {
         <div className="max-w-6xl mx-auto">
           <div className="max-w-3xl mb-16">
             <p className="inline-block font-body text-sm tracking-[0.12em] uppercase text-gold border border-gold/60 bg-gold/10 rounded-md px-3 py-1 mb-6">
-              The Founder ON Journey
+              The Founder ON™ Journey
             </p>
             <h2 className="heading-display text-4xl md:text-5xl text-navy mb-8" style={{ textWrap: "balance" }}>
               Three pillars of delivery.
@@ -197,7 +197,7 @@ const Index = () => {
                 What We Build Together
               </p>
               <h2 className="heading-display text-4xl md:text-5xl text-navy mb-8" style={{ textWrap: "balance" }}>
-                Inside Founder ON, the work becomes tangible.
+                Inside Founder ON™, the work becomes tangible.
               </h2>
               <p className="font-body text-lg md:text-xl text-charcoal/80 leading-relaxed" style={{ textWrap: "balance" }}>
                 You are not leaving with inspiration alone. You are building a real business, and becoming the founder capable of leading it.
@@ -231,7 +231,7 @@ const Index = () => {
               Beyond the assets, a deeper shift.
             </h2>
             <p className="font-body text-lg md:text-xl text-charcoal/80 leading-relaxed" style={{ textWrap: "balance" }}>
-              Founder ON is designed to create a deeper shift in how you build, lead, operate, and live.
+              Founder ON™ is designed to create a deeper shift in how you build, lead, operate, and live.
             </p>
           </div>
 

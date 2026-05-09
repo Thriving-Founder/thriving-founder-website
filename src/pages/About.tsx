@@ -186,13 +186,13 @@ const About = () => {
               />
             </div>
             <p className="font-body text-lg md:text-xl text-charcoal/80 leading-relaxed mb-6">
-              Blair Owens is Thriving Founder's Creative Director and Brand Strategist, and the founder of Origin Creative. He leads brand development, website design and build, social media strategy, and marketing asset production, both for Thriving Founder itself and for clients inside Founder ON.
+              Blair Owens is Thriving Founder's Creative Director and Brand Strategist, and the founder of Origin Creative. He leads brand development, website design and build, social media strategy, and marketing asset production, both for Thriving Founder itself and for clients inside Founder ON™.
             </p>
             <p className="font-body text-lg md:text-xl text-charcoal/80 leading-relaxed mb-6">
               Blair's connection to the work is personal as well as professional. As a former coaching client of Aaron's, he experienced the transformation firsthand before bringing his creative expertise into the business. That gives him an unusual perspective: he does not just understand the brand visually, he understands the work from the inside.
             </p>
             <p className="font-body text-lg md:text-xl font-bold text-charcoal leading-relaxed">
-              When you join Founder ON, Blair and the production team help co-build the business with you. Your brand identity, website, social media system, and marketing assets are not off-the-shelf templates. They are custom-built by a team that understands your vision because they helped you clarify it.
+              When you join Founder ON™, Blair and the production team help co-build the business with you. Your brand identity, website, social media system, and marketing assets are not off-the-shelf templates. They are custom-built by a team that understands your vision because they helped you clarify it.
             </p>
           </div>
         </div>

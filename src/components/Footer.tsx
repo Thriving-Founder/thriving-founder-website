@@ -55,16 +55,7 @@ const Footer = () => {
           <a href="/" className="font-body text-sm tracking-[0.15em] uppercase text-primary-foreground/70 hover:text-primary-foreground transition-colors">Home</a>
           <a href="/about" className="font-body text-sm tracking-[0.15em] uppercase text-primary-foreground/70 hover:text-primary-foreground transition-colors">About</a>
           <a href="/founder-on" className="font-body text-sm tracking-[0.15em] uppercase text-primary-foreground/70 hover:text-primary-foreground transition-colors">
-            ON<sup
-              style={{
-                fontSize: "0.5em",
-                position: "relative",
-                top: "-0.7em",
-                marginLeft: "0.1em",
-                verticalAlign: "baseline",
-                lineHeight: 1,
-              }}
-            >™</sup> Experience
+            Founder ON™ Experience
           </a>
           <a href="/founder-freedom-score" className="font-body text-sm tracking-[0.15em] uppercase text-primary-foreground/70 hover:text-primary-foreground transition-colors">Founder Freedom Score</a>
           <a href="/results" className="font-body text-sm tracking-[0.15em] uppercase text-primary-foreground/70 hover:text-primary-foreground transition-colors">Results</a>

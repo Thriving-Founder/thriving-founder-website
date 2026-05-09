@@ -20,7 +20,7 @@ const InvestmentSection = () => {
             Investment
           </h2>
           <p className="font-body text-base text-charcoal/80 leading-relaxed max-w-2xl mx-auto">
-            ON™ is a 24-week one-on-one partnership including weekly strategy sessions, full brand and website co-build, marketing systems, and access to ON Platform™.
+            Founder ON™ is a 24-week one-on-one partnership including weekly strategy sessions, full brand and website co-build, marketing systems, and access to ON Platform™.
           </p>
         </div>
 

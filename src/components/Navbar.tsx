@@ -34,7 +34,7 @@ const Navbar = ({ variant = "dark", bg, hideGoldButton = false }: { variant?: "d
     : "hover:text-navy";
 
   const onMethodLinks = [
-    { href: "/founder-on", label: "What is ON™" },
+    { href: "/founder-on", label: "What is Founder ON™" },
     { href: "/results", label: "Results" },
     { href: "/testimonials", label: "Testimonials" },
   ];
@@ -69,7 +69,7 @@ const Navbar = ({ variant = "dark", bg, hideGoldButton = false }: { variant?: "d
             <button
               className={`${hoverColor} transition-colors flex items-center gap-1 uppercase`}
             >
-              The ON Method
+              The Founder ON™ Method
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ transform: dropdownOpen ? "rotate(180deg)" : "rotate(0)", transition: "transform 0.2s" }}>
                 <polyline points="6 9 12 15 18 9" />
               </svg>
@@ -156,7 +156,7 @@ const Navbar = ({ variant = "dark", bg, hideGoldButton = false }: { variant?: "d
               onClick={() => setMobileDropdownOpen(!mobileDropdownOpen)}
               className="text-primary-foreground/80 hover:text-primary-foreground transition-colors flex items-center gap-1"
             >
-              The ON Method
+              The Founder ON™ Method
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ transform: mobileDropdownOpen ? "rotate(180deg)" : "rotate(0)", transition: "transform 0.2s" }}>
                 <polyline points="6 9 12 15 18 9" />
               </svg>

@@ -1,7 +1,7 @@
 const ProgramHeroSection = () => (
   <section className="section-navy min-h-[80vh] flex flex-col items-center justify-center text-center px-6 pt-32 pb-24">
     <p className="font-body text-sm font-semibold tracking-[0.3em] text-gold uppercase mb-8">
-      ON™
+      Founder ON™
     </p>
     <h1 className="heading-display text-5xl md:text-7xl lg:text-8xl text-primary-foreground mb-4">
       Build the business.

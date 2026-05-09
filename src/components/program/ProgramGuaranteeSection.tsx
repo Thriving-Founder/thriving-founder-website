@@ -14,7 +14,7 @@ const ProgramGuaranteeSection = () => {
         </h2>
         <div className="space-y-6 font-body text-base text-primary-foreground/70 leading-relaxed">
           <p>
-            ON™ is built around measurable milestones, not vague promises.
+            Founder ON™ is built around measurable milestones, not vague promises.
           </p>
           <p>
             If you complete the weekly playbooks inside ON Platform™, attend the scheduled partnership sessions, and implement the agreed action steps, your business should be operational within the partnership timeline.

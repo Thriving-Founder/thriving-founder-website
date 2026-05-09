@@ -292,6 +292,23 @@ const FounderONProcessSection = () => {
           >
             Meet
           </p>
+          <p
+            className="block"
+            style={{
+              fontFamily: "'Figtree', sans-serif",
+              fontWeight: 600,
+              fontSize: "clamp(1.4rem, 3.8vw, 3.2rem)",
+              letterSpacing: "0.22em",
+              textTransform: "uppercase",
+              color: "hsl(var(--gold))",
+              marginBottom: "-0.3em",
+              marginRight: "-0.22em",
+              opacity: introVisible ? 1 : 0,
+              transition: "opacity 0.8s ease",
+            }}
+          >
+            Founder
+          </p>
           <h2
             className="leading-[1.05] mb-0"
             style={{
@@ -356,7 +373,7 @@ const FounderONProcessSection = () => {
           </div>
           <div className="flex items-end py-10 md:py-16 px-8 md:px-16">
             <p className="font-body text-lg md:text-xl lg:text-2xl leading-relaxed" style={{ color: "#2D2D2D" }}>
-              Designed for capable professionals who want more than advice, coaching, or disconnected services. Founder ON<span className="text-xs" style={{ verticalAlign: "top", lineHeight: 1 }}>™</span> helps you build a fully operational business, and become the founder required to lead it. Through four stages, Empower, Build, Operate, and Thrive, the process integrates strategy, founder development, and expert-led production into one coherent path.
+              Designed for capable professionals who want more than advice, coaching, or disconnected services. Founder ON™ helps you build a fully operational business, and become the founder required to lead it. Through four stages, Empower, Build, Operate, and Thrive, the process integrates strategy, founder development, and expert-led production into one coherent path.
             </p>
           </div>
         </div>
@@ -383,7 +400,7 @@ const FounderONProcessSection = () => {
           <p className="font-body text-lg md:text-xl text-primary-foreground/90 leading-relaxed mb-6" style={{ textWrap: "balance" }}>
             This is not a course or a stack of separate services. It is a proprietary process for building the business, developing the founder, and creating a stronger path to freedom, mastery, and a more fully lived life.
           </p>
-          <a href="/founder-on" className="btn-gold">Explore Founder ON →</a>
+          <a href="/founder-on" className="btn-gold">Explore Founder ON™ →</a>
         </div>
     </section>
     </>

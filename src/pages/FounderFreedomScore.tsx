@@ -56,7 +56,7 @@ const receives = [
   "Individual scores across all four foundations, displayed as a visual radar chart",
   "Insight into which foundation is your strongest, and which is most limiting your progress",
   "A clearer sense of what your next move may need to be",
-  "A pathway toward deeper support through ON, if the fit is right",
+  "A pathway toward deeper support through Founder ON™, if the fit is right",
 ];
 
 const radarLabels = ["Clarity", "Capacity", "Cashflow", "Confidence"];
@@ -296,11 +296,11 @@ const FounderFreedomScore = () => {
         </div>
       </section>
 
-      {/* How It Connects to ON */}
+      {/* How It Connects to Founder ON™ */}
       <section className="section-navy py-24 md:py-32 px-6">
         <div className="max-w-4xl mx-auto">
           <p className="inline-block font-body text-sm tracking-[0.12em] uppercase text-gold border border-gold/60 bg-gold/10 rounded-md px-3 py-1 mb-6">
-            How It Connects to ON
+            How It Connects to Founder ON™
           </p>
           <h2 className="heading-display text-4xl md:text-5xl text-primary-foreground mb-10">
             The Founder Freedom Score is the front door, not the full journey.
@@ -312,7 +312,7 @@ const FounderFreedomScore = () => {
             For others, it will reveal that they are ready for a deeper build, one that requires strategy, execution, and support at a higher level.
           </p>
           <p className="font-body text-lg md:text-xl font-bold text-primary-foreground leading-relaxed">
-            That is where ON begins.
+            That is where Founder ON™ begins.
           </p>
         </div>
       </section>

@@ -34,13 +34,13 @@ const Bullet = ({ children }: { children: React.ReactNode }) => (
 const caseStudies = [
   {
     title: "From scattered expertise to a premium market position.",
-    body: "A former corporate leader with 20 years of industry experience had deep knowledge but no clear way to package it. Through ON, they moved from a vague consulting concept to a defined premium offer with clear positioning, a professional brand, and a web presence that reflected the caliber of their work.",
+    body: "A former corporate leader with 20 years of industry experience had deep knowledge but no clear way to package it. Through Founder ON™, they moved from a vague consulting concept to a defined premium offer with clear positioning, a professional brand, and a web presence that reflected the caliber of their work.",
     outcome:
       "Within the first 12 weeks, they had a clarified premium offer, a launched site, and their first qualified inbound inquiries from their target market.",
   },
   {
     title: "From overthinking to operational momentum.",
-    body: "A founder in the wellness and professional development space had been circling the same decisions for over a year, unable to commit to a direction, a price point, or a brand identity. The structured progression of ON gave them the strategic clarity and accountability to stop deliberating and start building.",
+    body: "A founder in the wellness and professional development space had been circling the same decisions for over a year, unable to commit to a direction, a price point, or a brand identity. The structured progression of Founder ON™ gave them the strategic clarity and accountability to stop deliberating and start building.",
     outcome:
       "By Week 16, they had a launched brand, a functioning website, and their first paying clients, after more than a year of stalling.",
   },

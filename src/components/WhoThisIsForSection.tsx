@@ -18,7 +18,7 @@ const WhoThisIsForSection = () => {
         </h2>
 
         <p className="font-body text-lg md:text-xl text-charcoal/80 leading-relaxed mb-6">
-          Founder ON is designed for people who already have meaningful professional experience and real capacity. They may be coming from corporate leadership, consulting, creative industries, wellness, professional services, or an earlier chapter of entrepreneurship.
+          Founder ON™ is designed for people who already have meaningful professional experience and real capacity. They may be coming from corporate leadership, consulting, creative industries, wellness, professional services, or an earlier chapter of entrepreneurship.
         </p>
         <p className="font-body text-lg md:text-xl text-charcoal/80 leading-relaxed mb-12">
           This is for capable professionals who are ready to turn expertise into a thriving business, without losing the life they are trying to create.

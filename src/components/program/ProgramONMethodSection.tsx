@@ -185,7 +185,7 @@ const ProgramONMethodSection = () => {
 
           
           <h2 className="heading-display text-4xl md:text-5xl text-navy mb-6">
-            The four phases of the ON™ partnership.
+            The four phases of the Founder ON™ partnership.
           </h2>
           {/* Phase indicator */}
           <div className="flex items-center justify-center gap-3 mt-10">

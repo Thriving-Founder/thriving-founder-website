@@ -126,7 +126,7 @@ const HeroSection = () => {
                   textWrap: "balance",
                 }}
               >
-                Founder ON<sup style={{ fontSize: "0.5em", verticalAlign: "super", lineHeight: 1 }}>™</sup> is a 24-week build partnership designed to turn your expertise into a thriving business, while helping you grow into the founder who can sustain it.
+                Founder ON™ is a 24-week build partnership designed to turn your expertise into a thriving business, while helping you grow into the founder who can sustain it.
               </p>
               <a
                 href="/founder-freedom-score"

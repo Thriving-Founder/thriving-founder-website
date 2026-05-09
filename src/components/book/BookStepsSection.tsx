@@ -14,7 +14,7 @@ const steps = [
   {
     number: "3",
     title: "You decide",
-    description: "If ON™ is the right fit, we'll outline the next steps together. No pressure. No follow-up calls.",
+    description: "If Founder ON™ is the right fit, we'll outline the next steps together. No pressure. No follow-up calls.",
   },
 ];
 

@@ -14,7 +14,7 @@ const ResultsGuaranteeSection = () => {
         </h2>
         <div className="space-y-6 font-body text-base text-primary-foreground/70 leading-relaxed">
           <p>
-            Every ON™ partnership is built around 9 measurable milestones. If you do the work, complete the playbooks, attend the sessions, implement the action steps, your business will be operational within the partnership timeline.
+            Every Founder ON™ partnership is built around 9 measurable milestones. If you do the work, complete the playbooks, attend the sessions, implement the action steps, your business will be operational within the partnership timeline.
           </p>
           <p>
             If your brand and website are not live by Week 12 and your first client has not been enrolled by Week 20, we continue providing support at no additional cost until your first client is enrolled.

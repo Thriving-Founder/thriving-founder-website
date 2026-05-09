@@ -188,33 +188,48 @@ const FounderON = () => {
       {/* ── HERO ── */}
       <section className="section-navy pt-40 pb-12 md:pt-48 md:pb-32 px-6">
         <div className="max-w-5xl mx-auto text-center">
-          <h1
-            className="leading-[1.05] mb-4 select-none"
-            style={{
-              fontFamily: "'Figtree', sans-serif",
-              fontWeight: 700,
-              fontSize: "clamp(5rem, 14vw, 12rem)",
-              letterSpacing: "-0.04em",
-              WebkitTextStroke: "4px hsl(var(--gold))",
-              color: "transparent",
-            }}
-          >
-            ON
-            <sup
-              className="text-base md:text-3xl"
+          <div className="mb-4 select-none flex flex-col items-center relative">
+            <span
+              className="relative"
               style={{
-                position: "relative",
-                top: "-2.8rem",
-                marginLeft: "0.05em",
-                letterSpacing: 0,
                 fontFamily: "'Figtree', sans-serif",
                 fontWeight: 600,
-                WebkitTextStroke: "1px hsl(var(--gold))",
+                fontSize: "clamp(1.25rem, 3.4vw, 2.85rem)",
+                letterSpacing: "0.22em",
+                textTransform: "uppercase",
+                color: "hsl(var(--gold))",
+                marginBottom: "-0.3em",
+                marginRight: "-0.22em",
               }}
             >
-              ™
-            </sup>
-          </h1>
+              Founder
+              <span
+                className="absolute"
+                style={{
+                  top: "-0.2em",
+                  right: "-0.9em",
+                  fontSize: "0.4em",
+                  fontWeight: 600,
+                  letterSpacing: 0,
+                }}
+              >
+                ™
+              </span>
+            </span>
+            <span
+              style={{
+                fontFamily: "'Figtree', sans-serif",
+                fontWeight: 700,
+                fontSize: "clamp(5rem, 14vw, 12rem)",
+                letterSpacing: "-0.04em",
+                lineHeight: 1,
+                WebkitTextStroke: "4px hsl(var(--gold))",
+                color: "transparent",
+              }}
+            >
+              ON
+            </span>
+          </div>
           <p className="heading-display text-3xl md:text-4xl text-primary-foreground mb-6">
             Build the business and the founder required to thrive.
           </p>
@@ -248,7 +263,7 @@ const FounderON = () => {
           </div>
           <div>
             <p className="inline-block font-body text-sm tracking-[0.12em] uppercase text-gold border border-gold/60 bg-gold/10 rounded-md px-3 py-1 mb-6">
-              What Founder ON Is
+              What Founder ON™ Is
             </p>
             <h2 className="heading-display text-4xl md:text-5xl text-navy mb-8">
               Thriving Founder's flagship business-building experience.
@@ -260,7 +275,7 @@ const FounderON = () => {
               Most entrepreneurial paths are fragmented. One person gives you mindset. Another gives you strategy. Another gives you a website. Another gives you marketing. You are left trying to assemble a business, a brand, an offer, a revenue model, and a new founder identity on your own.
             </p>
             <p className="font-body text-lg md:text-xl font-bold text-charcoal leading-relaxed mb-6">
-              Founder ON solves that by bringing the work together.
+              Founder ON™ solves that by bringing the work together.
             </p>
             <div className="flex flex-col gap-3">
               <Bullet>It develops the business.</Bullet>
@@ -281,7 +296,7 @@ const FounderON = () => {
                 The 4-Stage Process
               </p>
               <h2 className="heading-display text-4xl md:text-5xl text-navy mb-8" style={{ textWrap: "balance" }}>
-                Founder ON moves through four stages.
+                Founder ON™ moves through four stages.
               </h2>
               <p className="font-body text-lg md:text-xl text-charcoal/80 leading-relaxed" style={{ textWrap: "balance" }}>
                 Each stage develops both the business and the founder required to lead it.
@@ -303,7 +318,7 @@ const FounderON = () => {
         <div className="max-w-6xl mx-auto">
           <div className="max-w-3xl mb-16">
             <p className="inline-block font-body text-sm tracking-[0.12em] uppercase text-gold border border-gold/60 bg-gold/10 rounded-md px-3 py-1 mb-6">
-              How Founder ON Is Delivered
+              How Founder ON™ Is Delivered
             </p>
             <h2 className="heading-display text-4xl md:text-5xl text-navy mb-8">
               Three pillars of delivery.
@@ -383,7 +398,7 @@ const FounderON = () => {
             Beyond the assets, a deeper shift.
           </h2>
           <p className="font-body text-lg md:text-xl text-charcoal/80 leading-relaxed mb-12">
-            Founder ON is designed to create a deeper shift in how you build, lead, make decisions, and live.
+            Founder ON™ is designed to create a deeper shift in how you build, lead, make decisions, and live.
           </p>
           <div className="flex flex-col gap-10">
             {transformations.map((t, i) => (
@@ -454,7 +469,7 @@ const FounderON = () => {
               Built With Creative and Production Support
             </p>
             <h2 className="heading-display text-4xl md:text-5xl text-navy mb-8">
-              Founder ON is not just guidance.
+              Founder ON™ is not just guidance.
             </h2>
             <p className="font-body text-lg md:text-xl text-charcoal/80 leading-relaxed mb-6">
               Blair Owens and the production team help translate strategy into real brand, website, and marketing assets, so your business is not left at the idea stage.
@@ -477,7 +492,7 @@ const FounderON = () => {
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-16">
           <div>
             <p className="inline-block font-body text-sm tracking-[0.12em] uppercase text-gold border border-gold/60 bg-gold/10 rounded-md px-3 py-1 mb-6">
-              Who Founder ON Is For
+              Who Founder ON™ Is For
             </p>
             <h3 className="heading-display text-3xl md:text-4xl text-navy mb-6">
               For capable professionals ready to build at a higher level.
@@ -491,10 +506,10 @@ const FounderON = () => {
           </div>
           <div>
             <p className="inline-block font-body text-sm tracking-[0.12em] uppercase text-gold border border-gold/60 bg-gold/10 rounded-md px-3 py-1 mb-6">
-              Who Founder ON Is Not For
+              Who Founder ON™ Is Not For
             </p>
             <h3 className="heading-display text-3xl md:text-4xl text-navy mb-6">
-              Founder ON is not for everyone.
+              Founder ON™ is not for everyone.
             </h3>
             <p className="font-body text-lg md:text-xl text-charcoal/80 leading-relaxed mb-8">
               It is likely not the right fit if:
@@ -513,7 +528,7 @@ const FounderON = () => {
             Investment
           </p>
           <h2 className="heading-display text-4xl md:text-5xl text-navy mb-10" style={{ textWrap: "balance" }}>
-            Founder ON is a premium 24-week partnership.
+            Founder ON™ is a premium 24-week partnership.
           </h2>
           <p className="font-body text-lg md:text-xl text-charcoal/80 leading-relaxed" style={{ textWrap: "balance" }}>
             Investment is discussed on our first strategy call so we can understand your goals, stage, and fit before recommending the right path forward.
@@ -531,7 +546,7 @@ const FounderON = () => {
             Built for founders who want more than advice.
           </h2>
           <p className="font-body text-lg md:text-xl text-charcoal/80 leading-relaxed mb-16">
-            Founder ON is designed for people who are ready to build something real, with more clarity, structure, and support than fragmented entrepreneurship usually provides.
+            Founder ON™ is designed for people who are ready to build something real, with more clarity, structure, and support than fragmented entrepreneurship usually provides.
           </p>
 
           <div className="flex flex-col gap-16">
@@ -582,7 +597,7 @@ const FounderON = () => {
             Begin with the Founder Freedom Score to see where you stand across Clarity, Capacity, Cashflow, and Confidence.
           </p>
           <p className="font-body text-base text-primary-foreground/60 leading-relaxed mb-10" style={{ textWrap: "balance" }}>
-            If there is strong alignment, the next step is a strategy call to explore whether Founder ON is the right fit for this stage of your business and life.
+            If there is strong alignment, the next step is a strategy call to explore whether Founder ON™ is the right fit for this stage of your business and life.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
@@ -593,7 +608,7 @@ const FounderON = () => {
               Discover Your Founder Freedom Score →
             </a>
             <a href="/book" className="btn-outline-light" onClick={() => trackCTA("Apply for Founder ON", "founder_on_final_cta", "/book")}>
-              Apply for Founder ON →
+              Apply for Founder ON™ →
             </a>
           </div>
         </div>

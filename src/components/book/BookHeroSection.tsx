@@ -18,7 +18,7 @@ const BookHeroSection = () => {
           </h1>
           <div className="font-body text-base text-primary-foreground/70 leading-relaxed space-y-6">
             <p style={{ textWrap: "balance" }}>
-              A strategy call is a 30-minute conversation to explore where you are, where you want to go, and whether ON™ is the right partnership for your transition.
+              A strategy call is a 30-minute conversation to explore where you are, where you want to go, and whether Founder ON™ is the right partnership for your transition.
             </p>
           </div>
         </div>
