@@ -166,14 +166,14 @@ const FounderFreedomScore = () => {
   return (
     <>
     <div className="min-h-screen relative z-10 bg-background">
-      <Navbar bg="#1F3F78" />
+      <Navbar bg="#1F3F78" hideGoldButton />
 
       {/* Hero */}
       <section className="section-navy">
         <div className="grid md:grid-cols-2 items-stretch">
           {/* Left content */}
           <div className="flex flex-col justify-center pt-40 pb-24 md:pt-48 md:pb-32 px-8 md:px-16">
-            <h1 className="heading-display text-5xl md:text-6xl lg:text-7xl text-primary-foreground leading-[1.1] mb-8">
+            <h1 className="heading-display text-5xl md:text-6xl lg:text-7xl text-primary-foreground leading-[1.1] mb-8 text-balance">
               Founder Freedom Score
               <sup
                 style={{
@@ -188,7 +188,7 @@ const FounderFreedomScore = () => {
                 ™
               </sup>
             </h1>
-            <p className="font-body text-xl md:text-2xl text-primary-foreground/90 leading-snug mb-12">
+            <p className="font-body text-xl md:text-2xl text-primary-foreground/90 leading-snug mb-12 text-balance">
               A clear diagnostic of where you stand as an entrepreneur, in about 3 minutes.
             </p>
             <a

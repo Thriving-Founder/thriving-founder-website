@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import logo from "@/assets/logo.webp";
 import { trackCTA } from "@/lib/gtag";
 
-const Navbar = ({ variant = "dark", bg }: { variant?: "dark" | "light"; bg?: string }) => {
+const Navbar = ({ variant = "dark", bg, hideGoldButton = false }: { variant?: "dark" | "light"; bg?: string; hideGoldButton?: boolean }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
@@ -96,13 +96,15 @@ const Navbar = ({ variant = "dark", bg }: { variant?: "dark" | "light"; bg?: str
           </div>
 
         </div>
-        <a
-          href="/founder-freedom-score"
-          className="btn-gold text-sm px-6 py-3 hidden lg:inline-block"
-          onClick={() => trackCTA("Take the Founder Freedom Score", "navbar")}
-        >
-          Take the Founder Freedom Score →
-        </a>
+        {!hideGoldButton && (
+          <a
+            href="/founder-freedom-score"
+            className="btn-gold text-sm px-6 py-3 hidden lg:inline-block"
+            onClick={() => trackCTA("Take the Founder Freedom Score", "navbar")}
+          >
+            Take the Founder Freedom Score →
+          </a>
+        )}
 
         {/* Mobile hamburger / close */}
         <button
@@ -175,13 +177,15 @@ const Navbar = ({ variant = "dark", bg }: { variant?: "dark" | "light"; bg?: str
             )}
           </div>
 
-          <a
-            href="/founder-freedom-score"
-            className="btn-gold text-sm px-8 py-3 mt-4"
-            onClick={() => setMenuOpen(false)}
-          >
-            Take the Founder Freedom Score →
-          </a>
+          {!hideGoldButton && (
+            <a
+              href="/founder-freedom-score"
+              className="btn-gold text-sm px-8 py-3 mt-4"
+              onClick={() => setMenuOpen(false)}
+            >
+              Take the Founder Freedom Score →
+            </a>
+          )}
         </div>
       </div>
 

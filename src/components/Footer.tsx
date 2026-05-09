@@ -73,13 +73,13 @@ const Footer = () => {
 
         {/* Socials */}
         <div className="flex items-center justify-center gap-5 mb-12">
-          <a href="#" aria-label="LinkedIn" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+          <a href="https://www.linkedin.com/company/thriving-founder/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
             <Linkedin size={22} strokeWidth={1.5} />
           </a>
-          <a href="#" aria-label="Instagram" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+          <a href="https://www.instagram.com/thriving_founder/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
             <Instagram size={22} strokeWidth={1.5} />
           </a>
-          <a href="#" aria-label="Facebook" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+          <a href="https://www.facebook.com/share/1DUjUPJzAs/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
             <Facebook size={22} strokeWidth={1.5} />
           </a>
         </div>
