@@ -178,8 +178,8 @@ const FFSReport = () => {
           <div className="flex flex-col justify-center pt-40 pb-24 md:pt-48 md:pb-32 px-8 md:px-16">
             <div className="max-w-3xl mx-auto">
               <Reveal>
-                <h1 className="heading-display text-4xl md:text-5xl text-navy leading-[1.1] mb-6">
-                  Thank you for taking the Founder Freedom Score, {firstName}.
+                <h1 className="heading-display text-4xl md:text-5xl text-navy leading-[1.1] mb-12 text-center">
+                  Thank you for taking the <span className="md:whitespace-nowrap">Founder Freedom Score</span>, {firstName}.
                 </h1>
                 <div className="bg-white rounded-lg p-8 md:p-10">
                   <p className="heading-display text-2xl md:text-3xl text-navy leading-snug mb-6">
@@ -199,9 +199,34 @@ const FFSReport = () => {
           <div className="max-w-4xl mx-auto">
             <Reveal>
               <Tag label="What This Is Costing You" />
-              <p className="font-body text-lg md:text-xl text-charcoal/80 leading-relaxed">
-                {barrierCosts[barrier]}
-              </p>
+              <div className="flex flex-col gap-5">
+                {barrierCosts[barrier].map((cost, i) => (
+                  <div key={i} className="flex items-start gap-4">
+                    <span
+                      aria-hidden
+                      className="flex-shrink-0 flex items-center justify-center rounded-full"
+                      style={{
+                        width: "1rem",
+                        height: "1rem",
+                        marginTop: "0.45rem",
+                        border: "1.5px solid hsl(var(--gold))",
+                      }}
+                    >
+                      <span
+                        className="rounded-full"
+                        style={{
+                          width: "0.4rem",
+                          height: "0.4rem",
+                          backgroundColor: "hsl(var(--gold))",
+                        }}
+                      />
+                    </span>
+                    <p className="font-body text-lg md:text-xl text-charcoal/80 leading-relaxed">
+                      {cost}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </Reveal>
           </div>
         </section>

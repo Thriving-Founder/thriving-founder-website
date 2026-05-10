@@ -28,15 +28,31 @@ export const barrierPatterns: Record<Foundation, string> = {
 };
 
 // ─── What This Is Costing You ───
-export const barrierCosts: Record<Foundation, string> = {
-  clarity:
-    'Time spent in motion that produces nothing that compounds. Decisions made on instinct that contradict each other six months later. The quiet exhaustion of working hard at something you cannot fully describe. And the sense, often hidden even from yourself, that you are waiting to feel ready before you commit to a direction.',
-  capacity:
-    'Decisions made when you are too tired to think clearly. Energy spent reacting instead of building. The slow erosion of the parts of your life outside the business that actually keep you human. And the cost most people miss, which is that low capacity makes every other foundation harder to address. You cannot get clarity when your nervous system is fried. You cannot price with confidence when you are exhausted.',
-  cashflow:
-    'Underpriced work that quietly tells you and your clients that what you do is worth less than it is. Saying yes to clients you should be saying no to. The hidden tax of every decision being shaped by survival math instead of strategic math. And the version of your business that never gets built because you cannot afford the time it would take to build it right.',
-  confidence:
-    'Decisions you have already made internally but have not acted on, because you are still waiting for permission. Visibility you are quietly avoiding because being seen as a founder feels different than being seen inside a role. Pricing that reflects what you think people will pay rather than what your work is worth. And the slow accumulation of evidence that you cannot trust yourself, which is the opposite of what this stage of your journey requires.',
+export const barrierCosts: Record<Foundation, string[]> = {
+  clarity: [
+    'Time spent in motion that produces nothing that compounds.',
+    'Decisions made on instinct that contradict each other six months later.',
+    'The quiet exhaustion of working hard at something you cannot fully describe.',
+    'The sense, often hidden even from yourself, that you are waiting to feel ready before you commit to a direction.',
+  ],
+  capacity: [
+    'Decisions made when you are too tired to think clearly.',
+    'Energy spent reacting instead of building.',
+    'The slow erosion of the parts of your life outside the business that actually keep you human.',
+    'Low capacity makes every other foundation harder to address. You cannot get clarity when your nervous system is fried, and you cannot price with confidence when you are exhausted.',
+  ],
+  cashflow: [
+    'Underpriced work that quietly tells you and your clients that what you do is worth less than it is.',
+    'Saying yes to clients you should be saying no to.',
+    'Every decision being shaped by survival math instead of strategic math.',
+    'The version of your business that never gets built because you cannot afford the time it would take to build it right.',
+  ],
+  confidence: [
+    'Decisions you have already made internally but have not acted on, because you are still waiting for permission.',
+    'Visibility you are quietly avoiding because being seen as a founder feels different than being seen inside a role.',
+    'Pricing that reflects what you think people will pay rather than what your work is worth.',
+    'The slow accumulation of evidence that you cannot trust yourself, which is the opposite of what this stage of your journey requires.',
+  ],
 };
 
 // ─── Three Moves ───
