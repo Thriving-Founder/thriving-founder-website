@@ -3,6 +3,18 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { Progress } from "@/components/ui/progress";
 import { trackFormSubmission, trackEvent, trackCTA } from "@/lib/gtag";
 
+const ON_PLATFORM_DOMAIN = "https://founderon.lovable.app";
+
+function getUtmParams(): Record<string, string> {
+  const params = new URLSearchParams(window.location.search);
+  const utm: Record<string, string> = {};
+  for (const key of ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"]) {
+    const val = params.get(key);
+    if (val) utm[key] = val;
+  }
+  return utm;
+}
+
 const questions = [
   // Clarity
   { foundation: "Clarity", q: "I can clearly articulate what my business does, who it's for, and why it matters, in one sentence." },
@@ -38,12 +50,74 @@ const ScoreAssessmentSection = () => {
   const [email, setEmail] = useState("");
   const [current, setCurrent] = useState(0);
   const [answers, setAnswers] = useState<number[]>([]);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
 
   const handleEmailSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (email.trim()) {
       trackFormSubmission("founder_freedom_score", "email_submitted");
       setPhase("assessment");
+    }
+  };
+
+  const submitToWebhook = async (finalAnswers: number[]) => {
+    setSubmitting(true);
+    setSubmitError("");
+
+    const foundations = ["Clarity", "Capacity", "Cashflow", "Confidence"];
+    const scores: Record<string, number> = {};
+    foundations.forEach((f) => {
+      const indices = questions.map((q, i) => (q.foundation === f ? i : -1)).filter((i) => i >= 0);
+      const sum = indices.reduce((a, i) => a + (finalAnswers[i] || 0), 0);
+      scores[f.toLowerCase()] = Math.round((sum / (indices.length * 5)) * 100);
+    });
+
+    const rawResponses = questions.map((q, i) => ({
+      question: q.q,
+      foundation: q.foundation,
+      answer: finalAnswers[i],
+    }));
+
+    const payload = {
+      email,
+      name: email,
+      scores: {
+        clarity: scores.clarity,
+        capacity: scores.capacity,
+        cashflow: scores.cashflow,
+        confidence: scores.confidence,
+      },
+      responses: rawResponses,
+      metadata: getUtmParams(),
+    };
+
+    try {
+      const res = await fetch("/.netlify/functions/ffs-webhook", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        throw new Error(data.error || "Webhook request failed");
+      }
+
+      if (data.result_token) {
+        window.location.href = `${ON_PLATFORM_DOMAIN}/prospect/${data.result_token}`;
+        return;
+      }
+
+      // Fallback: show inline results if no token returned
+      setPhase("results");
+    } catch (err) {
+      console.error("Webhook submission error:", err);
+      setSubmitError("Something went wrong submitting your results. Showing them below instead.");
+      setPhase("results");
+    } finally {
+      setSubmitting(false);
     }
   };
 
@@ -56,7 +130,7 @@ const ScoreAssessmentSection = () => {
       const total = newAnswers.reduce((a, b) => a + b, 0);
       const finalPct = Math.round((total / maxScore) * 100);
       trackFormSubmission("founder_freedom_score", `assessment_completed_score_${finalPct}`);
-      setPhase("results");
+      submitToWebhook(newAnswers);
     }
   };
 
@@ -110,32 +184,44 @@ const ScoreAssessmentSection = () => {
 
         {phase === "assessment" && (
           <div>
-            <div className="mb-8">
-              <div className="flex justify-between font-body text-xs text-charcoal/50 mb-2">
-                <span>Question {current + 1} of {questions.length}</span>
-                <span>{questions[current].foundation}</span>
+            {submitting ? (
+              <div className="text-center py-16">
+                <div className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-gold border-r-transparent mb-6" />
+                <p className="font-body text-base text-charcoal/70">Generating your results...</p>
               </div>
-              <Progress value={((current + 1) / questions.length) * 100} className="h-1 bg-border" />
-            </div>
-            <h3 className="heading-display text-2xl md:text-3xl text-navy mb-10 leading-snug">
-              {questions[current].q}
-            </h3>
-            <div className="space-y-3">
-              {options.map((opt) => (
-                <button
-                  key={opt.value}
-                  onClick={() => handleAnswer(opt.value)}
-                  className="w-full text-left px-6 py-4 font-body text-sm text-charcoal border border-border hover:border-gold hover:bg-off-white transition-all duration-200"
-                >
-                  {opt.label}
-                </button>
-              ))}
-            </div>
+            ) : (
+              <>
+                <div className="mb-8">
+                  <div className="flex justify-between font-body text-xs text-charcoal/50 mb-2">
+                    <span>Question {current + 1} of {questions.length}</span>
+                    <span>{questions[current].foundation}</span>
+                  </div>
+                  <Progress value={((current + 1) / questions.length) * 100} className="h-1 bg-border" />
+                </div>
+                <h3 className="heading-display text-2xl md:text-3xl text-navy mb-10 leading-snug">
+                  {questions[current].q}
+                </h3>
+                <div className="space-y-3">
+                  {options.map((opt) => (
+                    <button
+                      key={opt.value}
+                      onClick={() => handleAnswer(opt.value)}
+                      className="w-full text-left px-6 py-4 font-body text-sm text-charcoal border border-border hover:border-gold hover:bg-off-white transition-all duration-200"
+                    >
+                      {opt.label}
+                    </button>
+                  ))}
+                </div>
+              </>
+            )}
           </div>
         )}
 
         {phase === "results" && (
           <div className="text-center">
+            {submitError && (
+              <p className="font-body text-sm text-red-600 mb-6">{submitError}</p>
+            )}
             <p className="font-body text-sm font-semibold tracking-[0.3em] text-gold uppercase mb-4">
               Your Founder Freedom Score™
             </p>
