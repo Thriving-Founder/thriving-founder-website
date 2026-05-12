@@ -105,7 +105,10 @@ const ScoreAssessmentSection = () => {
         throw new Error(data.error || "Webhook request failed");
       }
 
-      if (data.result_token) {
+      if (data.result_url) {
+        window.location.href = data.result_url;
+        return;
+      } else if (data.result_token) {
         window.location.href = `${ON_PLATFORM_DOMAIN}/prospect/${data.result_token}`;
         return;
       }
