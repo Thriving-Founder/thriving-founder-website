@@ -80,7 +80,7 @@ const Footer = () => {
             © 2026 Thriving Founder™. All rights reserved.
           </p>
           <div className="flex gap-6 font-body text-xs text-primary-foreground/40">
-            <a href="#" className="hover:text-primary-foreground/70 transition-colors">Privacy</a>
+            <a href="/privacy" className="hover:text-primary-foreground/70 transition-colors">Privacy</a>
             <a href="#" className="hover:text-primary-foreground/70 transition-colors">Terms</a>
           </div>
         </div>

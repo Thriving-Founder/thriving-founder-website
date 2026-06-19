@@ -101,6 +101,20 @@ const SignupCard = ({ className = "", showDetail = false }: SignupCardProps) => 
             </div>
           </div>
 
+          <p className="mt-4 text-xs leading-relaxed text-[#2D2D2D]/70">
+            We&rsquo;ll email you the session link and occasional Founder
+            ON&trade; updates. No spam &mdash; unsubscribe anytime. See our{" "}
+            <a
+              href="/privacy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded underline underline-offset-2 transition-colors hover:text-[#1B2A4A] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C9A84C]"
+            >
+              Privacy Policy
+            </a>
+            .
+          </p>
+
           <button
             type="submit"
             className="mt-6 inline-flex w-full items-center justify-center rounded-md bg-[#C9A84C] px-6 py-3 text-sm font-semibold uppercase tracking-[0.06em] text-[#1B2A4A] transition-colors hover:bg-[#bd9c40] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#C9A84C] focus-visible:ring-offset-2 focus-visible:ring-offset-[#F5F3EF]"
