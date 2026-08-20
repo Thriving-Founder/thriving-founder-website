@@ -132,8 +132,8 @@ const HeroSection = () => {
                 href="/founder-freedom-score"
                 className="btn-gold mt-8"
               >
-                <span className="md:hidden">Take the Founder Freedom Score</span>
-                <span className="hidden md:inline">Discover Your Founder Freedom Score</span>
+                <span className="md:hidden">Take the Founder Freedom Pattern</span>
+                <span className="hidden md:inline">Discover Your Founder Freedom Pattern</span>
               </a>
             </div>
           </div>

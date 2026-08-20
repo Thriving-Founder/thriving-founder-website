@@ -174,7 +174,7 @@ const FounderFreedomScore = () => {
           {/* Left content */}
           <div className="flex flex-col justify-center pt-40 pb-24 md:pt-48 md:pb-32 px-8 md:px-16">
             <h1 className="heading-display text-5xl md:text-6xl lg:text-7xl text-primary-foreground leading-[1.1] mb-8 text-balance">
-              Founder Freedom Score
+              Founder Freedom Pattern
               <sup
                 style={{
                   fontSize: "0.2em",
@@ -246,7 +246,7 @@ const FounderFreedomScore = () => {
               Freedom in business is not just a dream. It rests on foundations.
             </h2>
             <p className="font-body text-lg md:text-xl text-charcoal/80 leading-relaxed">
-              The Founder Freedom Score helps you assess four areas that consistently shape readiness:
+              The Founder Freedom Pattern helps you assess four areas that consistently shape readiness:
             </p>
           </div>
 
@@ -283,7 +283,7 @@ const FounderFreedomScore = () => {
             What You Receive
           </p>
           <h2 className="heading-display text-4xl md:text-5xl text-navy mb-10">
-            After completing the Founder Freedom Score, you will receive:
+            After completing the Founder Freedom Pattern, you will receive:
           </h2>
           <div className="flex flex-col gap-5 mb-10">
             {receives.map((t, i) => (
@@ -303,7 +303,7 @@ const FounderFreedomScore = () => {
             How It Connects to Founder ON™
           </p>
           <h2 className="heading-display text-4xl md:text-5xl text-primary-foreground mb-10">
-            The Founder Freedom Score is the front door, not the full journey.
+            The Founder Freedom Pattern is the front door, not the full journey.
           </h2>
           <p className="font-body text-lg md:text-xl text-primary-foreground/80 leading-relaxed mb-6">
             For some people, the score will simply create clarity.

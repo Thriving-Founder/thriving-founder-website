@@ -103,8 +103,8 @@ const Testimonials = () => {
 
       <BottomCTASection
         heading="Ready to start your journey?"
-        paragraph="Take the Founder Freedom Score to see where you stand."
-        ctaText="Take the Founder Freedom Score →"
+        paragraph="Take the Founder Freedom Pattern to see where you stand."
+        ctaText="Take the Founder Freedom Pattern →"
         ctaHref="/founder-freedom-score"
       /></div>
       <Footer />

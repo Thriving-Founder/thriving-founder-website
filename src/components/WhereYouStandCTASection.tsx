@@ -12,7 +12,7 @@ const WhereYouStandCTASection = () => {
           href="/founder-freedom-score"
           className="btn-gold"
         >
-          Discover Your Founder Freedom Score →
+          Discover Your Founder Freedom Pattern →
         </a>
       </div>
     </section>

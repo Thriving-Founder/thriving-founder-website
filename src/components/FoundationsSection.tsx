@@ -42,7 +42,7 @@ const FoundationsSection = () => {
           ))}
         </div>
         <p className="font-body text-sm text-charcoal/60 text-center max-w-3xl mx-auto mt-16 leading-relaxed">
-          These four dimensions are the backbone of the Founder Freedom Score™, the diagnostic framework for every coaching session, and the measurement system that tracks your transformation from Week 1 to Week 24.
+          These four dimensions are the backbone of the Founder Freedom Pattern™, the diagnostic framework for every coaching session, and the measurement system that tracks your transformation from Week 1 to Week 24.
         </p>
       </div>
     </section>

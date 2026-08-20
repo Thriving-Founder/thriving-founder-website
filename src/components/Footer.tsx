@@ -57,7 +57,7 @@ const Footer = () => {
           <a href="/founder-on" className="font-body text-sm tracking-[0.15em] uppercase text-primary-foreground/70 hover:text-primary-foreground transition-colors">
             Founder ON™ Experience
           </a>
-          <a href="/founder-freedom-score" className="font-body text-sm tracking-[0.15em] uppercase text-primary-foreground/70 hover:text-primary-foreground transition-colors">Founder Freedom Score</a>
+          <a href="/founder-freedom-score" className="font-body text-sm tracking-[0.15em] uppercase text-primary-foreground/70 hover:text-primary-foreground transition-colors">Founder Freedom Pattern</a>
           <a href="/results" className="font-body text-sm tracking-[0.15em] uppercase text-primary-foreground/70 hover:text-primary-foreground transition-colors">Results</a>
           <a href="/testimonials" className="font-body text-sm tracking-[0.15em] uppercase text-primary-foreground/70 hover:text-primary-foreground transition-colors">Testimonials</a>
         </nav>
