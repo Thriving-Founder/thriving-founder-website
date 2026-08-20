@@ -241,7 +241,7 @@ const FounderON = () => {
             className="btn-gold"
             onClick={() => trackCTA("Discover Your Founder Freedom Score", "founder_on_hero")}
           >
-            Discover Your Founder Freedom Score →
+            Discover Your Founder Freedom Pattern →
           </a>
         </div>
       </section>
@@ -434,7 +434,7 @@ const FounderON = () => {
             <Bullet>We bring structure, strategy, coaching depth, and production support.</Bullet>
           </div>
           <p className="font-body text-base text-charcoal/60 leading-relaxed mb-10">
-            The exact rhythm and scope are discussed during the Founder Freedom Score review or strategy call, based on your goals, stage, and build needs.
+            The exact rhythm and scope are discussed during the Founder Freedom Pattern review or strategy call, based on your goals, stage, and build needs.
           </p>
           <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
             {stages.map((s, i) => (
@@ -594,7 +594,7 @@ const FounderON = () => {
             Ready to build with real support?
           </h2>
           <p className="font-body text-lg md:text-xl text-primary-foreground/80 leading-relaxed mb-6" style={{ textWrap: "balance" }}>
-            Begin with the Founder Freedom Score to see where you stand across Clarity, Capacity, Cashflow, and Confidence.
+            Begin with the Founder Freedom Pattern to see where you stand across Clarity, Capacity, Cashflow, and Confidence.
           </p>
           <p className="font-body text-base text-primary-foreground/60 leading-relaxed mb-10" style={{ textWrap: "balance" }}>
             If there is strong alignment, the next step is a strategy call to explore whether Founder ON™ is the right fit for this stage of your business and life.
@@ -605,7 +605,7 @@ const FounderON = () => {
               className="btn-gold"
               onClick={() => trackCTA("Discover Your Founder Freedom Score", "founder_on_final_cta")}
             >
-              Discover Your Founder Freedom Score →
+              Discover Your Founder Freedom Pattern →
             </a>
             <a href="/book" className="btn-outline-light" onClick={() => trackCTA("Apply for Founder ON", "founder_on_final_cta", "/book")}>
               Apply for Founder ON™ →

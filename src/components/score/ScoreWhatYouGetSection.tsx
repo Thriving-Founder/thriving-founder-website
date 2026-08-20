@@ -4,7 +4,7 @@ import GoldLineIcon from "@/components/GoldLineIcon";
 const items = [
   {
     icon: "clarity" as const,
-    title: "Your Founder Freedom Score",
+    title: "Your Founder Freedom Pattern",
     description: "Your score across all 4 Foundations, Clarity, Capacity, Cashflow, and Confidence.",
   },
   {

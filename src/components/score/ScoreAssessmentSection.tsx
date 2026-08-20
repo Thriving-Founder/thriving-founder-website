@@ -226,7 +226,7 @@ const ScoreAssessmentSection = () => {
               <p className="font-body text-sm text-red-600 mb-6">{submitError}</p>
             )}
             <p className="font-body text-sm font-semibold tracking-[0.3em] text-gold uppercase mb-4">
-              Your Founder Freedom Score™
+              Your Founder Freedom Pattern™
             </p>
             <h2 className="heading-display text-6xl md:text-8xl text-navy mb-4">
               {pct}

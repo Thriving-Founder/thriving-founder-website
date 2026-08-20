@@ -8,7 +8,7 @@ const CTASection = () => {
           Ready to thrive?
         </h2>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="#" className="btn-gold" onClick={() => trackCTA("Take the Founder Freedom Score", "cta_section")}>Take the Founder Freedom Score →</a>
+          <a href="#" className="btn-gold" onClick={() => trackCTA("Take the Founder Freedom Score", "cta_section")}>Take the Founder Freedom Pattern →</a>
           <a href="#" className="btn-outline-light" onClick={() => trackCTA("Learn About the Program", "cta_section")}>Learn About the Program →</a>
         </div>
       </div>

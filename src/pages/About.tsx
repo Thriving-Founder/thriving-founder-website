@@ -294,9 +294,9 @@ const About = () => {
       </section>
 
       <BottomCTASection
-        heading="If this feels aligned, begin with the Founder Freedom Score."
+        heading="If this feels aligned, begin with the Founder Freedom Pattern."
         paragraph="A short, honest diagnostic to help you see where you stand, in about 3 minutes."
-        ctaText="Discover Your Founder Freedom Score →"
+        ctaText="Discover Your Founder Freedom Pattern →"
         ctaHref="/founder-freedom-score"
       /></div>
       <Footer />

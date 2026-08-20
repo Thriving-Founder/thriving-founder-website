@@ -179,7 +179,7 @@ const FFSReport = () => {
             <div className="max-w-3xl mx-auto">
               <Reveal>
                 <h1 className="heading-display text-4xl md:text-5xl text-navy leading-[1.1] mb-12 text-center">
-                  Thank you for taking the <span className="md:whitespace-nowrap">Founder Freedom Score</span>, {firstName}.
+                  Thank you for taking the <span className="md:whitespace-nowrap">Founder Freedom Pattern</span>, {firstName}.
                 </h1>
                 <div className="bg-white rounded-lg p-8 md:p-10">
                   <p className="heading-display text-2xl md:text-3xl text-navy leading-snug mb-6">

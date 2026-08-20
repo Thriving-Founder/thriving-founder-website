@@ -6,7 +6,7 @@ const AboutCTASection = () => (
       </h2>
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
         <a href="/book" className="btn-gold">Book a Strategy Call →</a>
-        <a href="/founder-freedom-score" className="btn-outline-light">Take the Founder Freedom Score™</a>
+        <a href="/founder-freedom-score" className="btn-outline-light">Take the Founder Freedom Pattern™</a>
       </div>
     </div>
   </section>

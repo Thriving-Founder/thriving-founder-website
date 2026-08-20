@@ -55,7 +55,7 @@ const MoreLifeCTASection = () => {
             href="/founder-freedom-score"
             className="btn-gold self-start"
           >
-            Take the Founder Freedom Score →
+            Take the Founder Freedom Pattern →
           </a>
         </div>
       </div>

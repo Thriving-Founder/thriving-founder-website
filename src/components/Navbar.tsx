@@ -102,7 +102,7 @@ const Navbar = ({ variant = "dark", bg, hideGoldButton = false }: { variant?: "d
             className="btn-gold text-sm px-6 py-3 hidden lg:inline-block"
             onClick={() => trackCTA("Take the Founder Freedom Score", "navbar")}
           >
-            Take the Founder Freedom Score →
+            Take the Founder Freedom Pattern →
           </a>
         )}
 
@@ -183,7 +183,7 @@ const Navbar = ({ variant = "dark", bg, hideGoldButton = false }: { variant?: "d
               className="btn-gold text-sm px-8 py-3 mt-4"
               onClick={() => setMenuOpen(false)}
             >
-              Take the Founder Freedom Score →
+              Take the Founder Freedom Pattern →
             </a>
           )}
         </div>
