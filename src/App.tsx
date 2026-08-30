@@ -8,6 +8,9 @@ import { useScrollDepth, useRouteTracking } from "@/hooks/useGATracking";
 import Index from "./pages/Index.tsx";
 
 const FounderON = lazy(() => import("./pages/FounderON.tsx"));
+const FounderOnLive = lazy(() => import("./pages/FounderOnLive.tsx"));
+const FounderOnLiveRegistered = lazy(() => import("./pages/FounderOnLiveRegistered.tsx"));
+const Privacy = lazy(() => import("./pages/Privacy.tsx"));
 const About = lazy(() => import("./pages/About.tsx"));
 const FounderFreedomScore = lazy(() => import("./pages/FounderFreedomScore.tsx"));
 const Results = lazy(() => import("./pages/Results.tsx"));
@@ -35,6 +38,9 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/founder-on" element={<FounderON />} />
+            <Route path="/founder-on-live" element={<FounderOnLive />} />
+            <Route path="/founder-on-live/registered" element={<FounderOnLiveRegistered />} />
+            <Route path="/privacy" element={<Privacy />} />
             <Route path="/program" element={<FounderON />} />
             <Route path="/about" element={<About />} />
             <Route path="/founder-freedom-score" element={<FounderFreedomScore />} />
